@@ -1,11 +1,12 @@
 import subprocess
+
+
 class Eval:
 
-    def __init__(self,trec_file,qrels):
-
+    def __init__(self, trec_file, qrels):
         self.trec_file = trec_file
         self.qrels = qrels
-        self.metrics =["map","ndcg_cut.20","P.10","P.5"]
+        self.metrics = ["map", "ndcg_cut.20", "P.10", "P.5"]
 
     @staticmethod
     def run_command(command):
@@ -25,10 +26,8 @@ class Eval:
                 score = score.replace("'", "")
                 score_data.append((metric, str(score)))
 
-        with open("results_of_retrieval",'w') as results_file:
+        with open("results_of_retrieval", 'w') as results_file:
             for result in score_data:
-                record = result[0]+"\t"+result[1]
+                record = result[0] + "\t" + result[1]
                 print(record)
-                results_file.write(record+"\n")
-
-
+                results_file.write(record + "\n")
