@@ -5,8 +5,8 @@ class Eval:
 
     def __init__(self, trec_file, qrels):
         """
-        :param trec_file:
-        :param qrels:
+        :param trec_file: path scores file.
+        :param qrels: path to relevance judgemnt file.
         """
         self.trec_file = trec_file
         self.qrels = qrels
