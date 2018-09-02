@@ -10,11 +10,11 @@ if __name__ == "__main__":
     end_indexing_time = time.time()
 
     start_retrieval_time = time.time()
-    '''
+    """
     
     Insert retrieval functionality
     
-    '''
+    """
     end_retrieval_time = time.time()
 
     elapsed_index_time = end_indexing_time - start_indexing_time
