@@ -1,10 +1,13 @@
 import subprocess
-import time
 
 
 class Eval:
 
     def __init__(self, trec_file, qrels):
+        """
+        :param trec_file:
+        :param qrels:
+        """
         self.trec_file = trec_file
         self.qrels = qrels
         self.metrics = ["map", "ndcg_cut.20", "P.10", "P.5"]
