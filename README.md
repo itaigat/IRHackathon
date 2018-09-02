@@ -61,12 +61,12 @@ Where:
 query-id Q0 document-id 1 score hackathon
 
 For example:
--750 Q0 GX261-61-14975000 1 0.333 hackathon
--750 Q0 GX261-70-6119593 1 0.311 hackathon
--...
--...
+- 750 Q0 GX261-61-14975000 1 0.333 hackathon
+- 750 Q0 GX261-70-6119593 1 0.311 hackathon
+- ...
+- ...
 
--Important Note - results file should be sorted by query-id(ascending),score(descending),document-id(descending).
+- Important Note - results file should be sorted by query-id(ascending),score(descending),document-id(descending).
 
 
 ### Relevance judgment file:
