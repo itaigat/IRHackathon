@@ -31,7 +31,16 @@ In order to get your time score, replace the comments with your code for each se
     end_retrieval_time = time.time()
 ```
 
-### Metrics
+
+
+### Evaluation
+In order to use the given evaluation class please go through the following stages:
+```bash
+   
+   cd <project directory>/evaluator/trec_eval.9.0
+   make
+   cp trec_eval ../
+```
 
 The metrics we will use are: 
 
