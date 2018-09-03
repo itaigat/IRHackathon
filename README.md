@@ -53,7 +53,7 @@ In order to check your results with the metrics above you can use the code below
     from evaluator.evaluate import Eval
     ...
     ...
-    evaluation = Eval(trec_file)
+    evaluation = Eval(trec_file, qrels)
     evaluation.run_evaluation()
 ```
 
