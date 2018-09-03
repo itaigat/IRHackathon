@@ -59,6 +59,7 @@ In order to check your results with the metrics above you can use the code below
 
 Where:
 - trec_file - Path to scores file
+- qrels - Path to relevance judgement file
 - Results of evaluation will be written in a file named "results_of_retrieval"
 
 ### Scores file format:
