@@ -31,12 +31,9 @@ In order to get your time score, replace the comments with your code for each se
     end_retrieval_time = time.time()
 ```
 
-
-
 ### Evaluation
 In order to use the given evaluation class please go through the following stages:
 ```bash
-   
    cd <project directory>/evaluator/trec_eval.9.0
    make
    cp trec_eval ../
@@ -53,11 +50,10 @@ In order to check your results with the metrics above you can use the code below
 
 
 ```python
-    import evaluator.evaluate as eval
+    from evaluator.evaluate import Eval
     ...
     ...
-    
-    evaluation = eval.Eval(trec_file, qrels)
+    evaluation = Eval(trec_file)
     evaluation.run_evaluation()
 ```
 
@@ -66,6 +62,7 @@ Where:
 - qrels - path to relevance judment file.
 - qrels parameter is given thorough command line.
 - Results of evaluation will be written in a file named "results_of_retrieval"
+
 ### Scores file format:
 query-id Q0 document-id 1 score hackathon
 
@@ -75,9 +72,8 @@ For example:
 - ...
 - ...
 
-- Important Note - results file should be sorted by query-id(ascending),score(descending),document-id(descending).
+**Important Note** - results file should be sorted by query - id(ascending), score(descending), document-id(descending).
 
 
 ### Relevance judgment file:
 The file is located at data/qrels.gov2_train.all 
-
