@@ -64,7 +64,7 @@ In order to check your results with the metrics above you can use the code below
 Where:
 - trec_file - Path to scores file.
 - qrels - path to relevance judment file.
-- Both parameters are given thorough command line.
+- qrels parameter is given thorough command line.
 - Results of evaluation will be written in a file named "results_of_retrieval"
 ### Scores file format:
 query-id Q0 document-id 1 score hackathon
