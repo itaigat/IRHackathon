@@ -1,4 +1,3 @@
-from evaluator.evaluate import Eval
 import time
 
 if __name__ == "__main__":
