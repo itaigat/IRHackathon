@@ -2,14 +2,12 @@ import subprocess
 
 
 class Eval:
-
-    def __init__(self, trec_file, qrels):
+    def __init__(self, trec_file):
         """
         :param trec_file: path scores file.
-        :param qrels: path to relevance judgemnt file.
         """
         self.trec_file = trec_file
-        self.qrels = qrels
+        self.qrels = ''  # path to relevance judgement file
         self.metrics = ["map", "ndcg_cut.20", "P.10", "P.5"]
 
     @staticmethod
