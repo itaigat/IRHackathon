@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     elapsed_index_time = end_indexing_time - start_indexing_time
     elapsed_retrieval_time = end_retrieval_time - start_retrieval_time
-    elapsed_time = elapsed_retrieval_time + elapsed_retrieval_time
+    elapsed_time = elapsed_retrieval_time + elapsed_index_time
 
     print('Total running time: ', elapsed_time)
     print('Indexing running time: ', elapsed_index_time)
