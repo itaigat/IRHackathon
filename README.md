@@ -37,6 +37,7 @@ In order to use the given evaluation class please go through the following stage
    cd <project directory>/evaluator/trec_eval.9.0
    make
    cp trec_eval ../
+   chmod +x ../trec_eval
 ```
 
 The metrics we will use are: 
@@ -53,12 +54,13 @@ In order to check your results with the metrics above you can use the code below
     from evaluator.evaluate import Eval
     ...
     ...
-    evaluation = Eval(trec_file)
+    evaluation = Eval(trec_file, qrels)
     evaluation.run_evaluation()
 ```
 
 Where:
 - trec_file - Path to scores file
+- qrels - Path to relevance judgement file
 - Results of evaluation will be written in a file named "results_of_retrieval"
 
 ### Scores file format:
